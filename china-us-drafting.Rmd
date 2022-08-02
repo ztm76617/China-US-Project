@@ -1,0 +1,162 @@
+---
+title: |
+  | Whither the Eagle:
+  | An Analysis of Developments in US-Sino Relations
+author: |
+  | Zachary Thomas McDowell
+  | MA & BA in Political Science
+date: "**Updated**: `r format(Sys.time(), '%B %d, %Y')`"
+abstract: |
+  \singlespace This paper examines the social, political, and economic developments that have taken place over the past 20 years between the United States and the People's Republic of China.
+output:
+  pdf_document:
+    number_sections: true
+    fig_caption: true
+    keep_tex: TRUE
+bibliography: chinabib.bib
+csl: apsa-edit.csl
+fontsize: 11pt
+indent: yes
+link-citations: yes
+geometry: margin=1in
+header-includes:
+- \usepackage{dcolumn}
+- \usepackage{float}
+- \floatplacement{figure}{ht}
+- \usepackage{setspace}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \usepackage{lastpage}
+- \setlength{\headheight}{14.49998pt}
+- \addtolength{\topmargin}{-2.49998pt}
+- \usepackage{rotating, graphicx}
+- \renewcommand{\topfraction}{.85}
+- \renewcommand{\bottomfraction}{.7}
+- \renewcommand{\textfraction}{.15}
+- \renewcommand{\floatpagefraction}{.66}
+- \setcounter{topnumber}{3}
+- \setcounter{bottomnumber}{3}
+- \setcounter{totalnumber}{4}
+- \usepackage[hang,flushmargin]{footmisc}
+- \usepackage{lipsum}
+- \usepackage{etoolbox}
+- \usepackage{mlmodern}
+- \usepackage[T1]{fontenc}
+- \usepackage{enumitem}
+- \setlist{noitemsep}
+- \AtBeginEnvironment{quote}{\singlespace\vspace{-\topsep}\small}
+- \AtEndEnvironment{quote}{\vspace{-\topsep}\endsinglespace}
+- |
+    ```{=latex}
+    \providecommand{\keywords}[1]{\textbf{Keywords:} #1}
+    ```
+nocite: |
+  | @li2016a, @li2008, @li1996,
+    @tse-tung2020a, @tse-tung2020b, @tse-tung2021, @tse-tung2021a, @tse-tung2021b, @tse-tung2021c, @tse-tung2021d
+---
+
+```{r setup, include=FALSE}
+#---------------------------------------------------------------------
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      fig.width = 7,
+                      fig.asp = 0.7,
+                      fig.align = "center",
+                      fig.pos = "ht")
+#---------------------------------------------------------------------
+library(tidyverse)
+library(plm)
+library(stargazer)
+library(lmtest)
+library(sandwich)
+library(kableExtra)
+library(interactions)
+library(readxl)
+library(captioner)
+library(bookdown)
+#---------------------------------------------------------------------
+# Load Data
+#---------------------------------------------------------------------
+mega_combined_vars_df_final <- readRDS("~/Google Drive/My Drive/3 - Misc. Data Research/Edited Data/mega_combined_vars_df_final.rds")
+#---------------------------------------------------------------------
+```
+
+```{=latex}
+\keywords{China, Manufacturing, Geopolitics, BRI}
+```
+
+\let\thefootnote\relax\footnotetext{\lipsum[1][1-7]}
+
+\thispagestyle{empty}
+
+\newpage
+\fancypagestyle{TOC}{%
+    \fancyhead[R]{}
+    \fancyhead[L]{}
+}
+
+\thispagestyle{TOC}
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+\newpage
+
+\fancypagestyle{INTRODUCTION}{%
+    \fancyhead[R]{}
+    \fancyhead[L]{}
+}
+
+\thispagestyle{INTRODUCTION}
+\clearpage
+
+\spacing{1.5}
+
+# Introduction {-}
+
+\lipsum[4-7]
+
+# Literature Review
+
+\lipsum[4-7]
+
+# Hypotheses
+
+\lipsum[4-7]
+
+# Data & Methods
+
+\lipsum[4-7]
+
+# Results
+
+\lipsum[4-7]
+
+# Discussion
+
+\lipsum[4-7]
+
+# Conclusion
+
+\lipsum[4-7]
+
+\clearpage
+\newpage
+\onehalfspace
+\fancypagestyle{end}{%
+    \fancyhead[R]{}
+    \fancyhead[L]{}
+}
+
+\pagestyle{end}
+
+# Bibliography {-}
+
+<div id="refs"></div>
+
+\singlespace
+\newpage
+
+# Appendix {-}
+

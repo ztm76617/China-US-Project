@@ -1,0 +1,264 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{dcolumn}
+\usepackage{float}
+\floatplacement{figure}{ht}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{lastpage}
+\setlength{\headheight}{14.49998pt}
+\addtolength{\topmargin}{-2.49998pt}
+\usepackage{rotating, graphicx}
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{4}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{lipsum}
+\usepackage{etoolbox}
+\usepackage{mlmodern}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\setlist{noitemsep}
+\AtBeginEnvironment{quote}{\singlespace\vspace{-\topsep}\small}
+\AtEndEnvironment{quote}{\vspace{-\topsep}\endsinglespace}
+\providecommand{\keywords}[1]{\textbf{Keywords:} #1}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Whither the Eagle:\\
+An Analysis of Developments in US-Sino Relations}
+\author{Zachary Thomas McDowell\\
+MA \& BA in Political Science}
+\date{\textbf{Updated}: August 02, 2022}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+\singlespace This paper examines the social, political, and economic
+developments that have taken place over the past 20 years between the
+United States and the People's Republic of China.
+\end{abstract}
+
+\keywords{China, Manufacturing, Geopolitics, BRI}
+
+\let\thefootnote\relax\footnotetext{\lipsum[1][1-7]}
+
+\thispagestyle{empty}
+
+\newpage
+\fancypagestyle{TOC}{%
+    \fancyhead[R]{}
+    \fancyhead[L]{}
+}
+
+\thispagestyle{TOC}
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+\newpage
+
+\fancypagestyle{INTRODUCTION}{%
+    \fancyhead[R]{}
+    \fancyhead[L]{}
+}
+
+\thispagestyle{INTRODUCTION}
+\clearpage
+
+\spacing{1.5}
+
+\hypertarget{introduction}{%
+\section*{Introduction}\label{introduction}}
+\addcontentsline{toc}{section}{Introduction}
+
+\lipsum[4-7]
+
+\hypertarget{literature-review}{%
+\section{Literature Review}\label{literature-review}}
+
+\lipsum[4-7]
+
+\hypertarget{hypotheses}{%
+\section{Hypotheses}\label{hypotheses}}
+
+\lipsum[4-7]
+
+\hypertarget{data-methods}{%
+\section{Data \& Methods}\label{data-methods}}
+
+\lipsum[4-7]
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\lipsum[4-7]
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\lipsum[4-7]
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+\lipsum[4-7]
+
+\clearpage
+\newpage
+\onehalfspace
+\fancypagestyle{end}{%
+    \fancyhead[R]{}
+    \fancyhead[L]{}
+}
+
+\pagestyle{end}
+
+\hypertarget{bibliography}{%
+\section*{Bibliography}\label{bibliography}}
+\addcontentsline{toc}{section}{Bibliography}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-li1996}{}}%
+Li, Minqi. 1996. {``China: {Six Years After Tiananmen}.''} \emph{Monthly
+Review}: 1--13.
+
+\leavevmode\vadjust pre{\hypertarget{ref-li2008}{}}%
+---------. 2008. \emph{The Rise of {China} and the Demise of the
+Capitalist World-Economy}. {London}: {Pluto Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-li2016a}{}}%
+---------. 2016. \emph{China and the Twenty-First-Century Crisis}.
+{London}: {Pluto Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-tse-tung2020b}{}}%
+Tse-Tung, Mao. 2020a. \emph{Selected {Works} of {Mao Tse-Tung}, {Volume
+VI}}. First ed. Reprint. {Paris}: {Foreign Languages Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-tse-tung2020a}{}}%
+---------. 2020b. \emph{Selected {Works} of {Mao Tse-Tung}, {Volume
+VII}}. Second edition. {Paris}: {Foreign Languages Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-tse-tung2021}{}}%
+---------. 2021a. \emph{Selected {Works} of {Mao Tse-Tung}, {Volume I}}.
+Second edition. {Paris}: {Foreign Languages Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-tse-tung2021a}{}}%
+---------. 2021b. \emph{Selected {Works} of {Mao Tse-Tung}, {Volume
+II}}. Second edition. {Paris}: {Foreign Languages Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-tse-tung2021b}{}}%
+---------. 2021c. \emph{Selected {Works} of {Mao Tse-Tung}, {Volume
+III}}. Second edition. {Paris}: {Foreign Languages Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-tse-tung2021c}{}}%
+---------. 2021d. \emph{Selected {Works} of {Mao Tse-Tung}, {Volume
+IV}}. Second edition. {Paris}: {Foreign Languages Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-tse-tung2021d}{}}%
+---------. 2021e. \emph{Selected {Works} of {Mao Tse-Tung}, {Volume V}}.
+Second edition. {Paris}: {Foreign Languages Press}.
+
+\end{CSLReferences}
+
+\singlespace
+\newpage
+
+\hypertarget{appendix}{%
+\section*{Appendix}\label{appendix}}
+\addcontentsline{toc}{section}{Appendix}
+
+\end{document}
